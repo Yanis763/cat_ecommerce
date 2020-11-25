@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :orders
   resources :carts
-  resources :products
+  resources :products 
   devise_for :users
   root to: "products#index"
   resources :users

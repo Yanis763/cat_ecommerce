@@ -1,4 +1,9 @@
+User.destroy_all
+Product.destroy_all
+Order.destroy_all
+
 require 'faker'
+Faker::Config.locale = :fr
 
 # ****************************** Create 2 products ******************************
 20.times do
