@@ -1,7 +1,7 @@
 require 'faker'
 # ****************************** Create 2 Users ******************************
 2.times do
-  User.create(encrypted_password: Faker::Internet.password, first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, email: Faker::Internet.email(domain: 'yopmail.com'))
+  User.create(password: Faker::Internet.password, first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, email: Faker::Internet.email(domain: 'yopmail.com'))
 end
 tp User.all
 
