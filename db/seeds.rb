@@ -1,10 +1,6 @@
-require 'faker'
-
 User.destroy_all
 Product.destroy_all
-Order.destroy_all
-
-
+Order.destroy_all 
 
 # ****************************** Create 2 Users ******************************
 2.times do
@@ -12,7 +8,7 @@ Order.destroy_all
 end
 tp User.all
 
-
+require 'faker'
 Faker::Config.locale = :fr
 
 
