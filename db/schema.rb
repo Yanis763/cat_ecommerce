@@ -1,4 +1,4 @@
-# This file is auto-generated from the current state of the database. Instead
+r# This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
 #
@@ -50,7 +50,7 @@ ActiveRecord::Schema.define(version: 2020_11_25_184348) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["cart_id"], name: "index_orders_on_cart_id"
-    t.index ["product_id"], name: "index_orders_on_product_id"
+    t.index ["product_idr"], name: "index_orders_on_product_id"
   end
 
   create_table "products", force: :cascade do |t|
